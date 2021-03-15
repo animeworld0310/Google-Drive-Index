@@ -669,7 +669,7 @@ function file_others(path) {
 <div class="card-body">
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
 </div>
-<p class="card-text text-center"><a href="https://urlshortx.com/st?api=098883295e6f9c7bfc90ca510c60aec9e078d3ff&${href}" class="btn btn-primary">Download</a></p><br>`;
+<p class="card-text text-center"><a href="https://urlshortx.com/st?api=098883295e6f9c7bfc90ca510c60aec9e078d3ff&url=${href}" class="btn btn-primary">Download</a></p><br>`;
 	$('#content').html(content);
 }
 
@@ -699,7 +699,7 @@ function file_code(path) {
 <pre id="editor" ></pre>
 </div>
 </div>
-<p class="card-text text-center"><a href="https://urlshortx.com/st?api=098883295e6f9c7bfc90ca510c60aec9e078d3ff&${href}" class="btn btn-primary">Download</a></p><br>
+<p class="card-text text-center"><a href="https://urlshortx.com/st?api=098883295e6f9c7bfc90ca510c60aec9e078d3ff&url=${href}" class="btn btn-primary">Download</a></p><br>
 <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Google-Drive-Index@2.0.8/js/ace/1.4.7/ace.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Google-Drive-Index@2.0.8/js/ace/1.4.7/ext-language_tools.js"></script>`;
 	$('#content').html(content);
@@ -733,7 +733,7 @@ function file_video(path) {
   </div>
 	${UI.disable_player ? '<style>#mep_0{display:none;}</style>' : ''}
   <script type="text/javascript">$('#bPlayer').mediaelementplayer();</script>
-  <p class="card-text text-center"><a href="https://urlshortx.com/st?api=098883295e6f9c7bfc90ca510c60aec9e078d3ff&${url}" class="btn btn-primary">Download</a></p><br>
+  <p class="card-text text-center"><a href="https://urlshortx.com/st?api=098883295e6f9c7bfc90ca510c60aec9e078d3ff&url=${url}" class="btn btn-primary">Download</a></p><br>
   </div>
   </div>
   `;
@@ -756,7 +756,7 @@ function file_audio(path) {
   </div>
 	${UI.disable_player ? '<style>#mep_0{display:none;}</style>' : ''}
   <script type="text/javascript">$('#bPlayer').mediaelementplayer();</script>
-  <p class="card-text text-center"><a href="https://urlshortx.com/st?api=098883295e6f9c7bfc90ca510c60aec9e078d3ff&${url}" class="btn btn-primary">Download</a></p><br>
+  <p class="card-text text-center"><a href="https://urlshortx.com/st?api=098883295e6f9c7bfc90ca510c60aec9e078d3ff&url=${url}" class="btn btn-primary">Download</a></p><br>
   </div>
   </div>
   `;
@@ -775,7 +775,7 @@ function file_pdf(path) {
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   <object data="${inline_url}" type="application/pdf" name="${file_name}" style="width:100%;height:94vh;"><embed src="${inline_url}" type="application/pdf"/></object>
   </div>
-  <p class="card-text text-center"><a href="https://urlshortx.com/st?api=098883295e6f9c7bfc90ca510c60aec9e078d3ff&${url}" class="btn btn-primary">Download</a></p><br>
+  <p class="card-text text-center"><a href="https://urlshortx.com/st?api=098883295e6f9c7bfc90ca510c60aec9e078d3ff&url=${url}" class="btn btn-primary">Download</a></p><br>
   </div>
   </div>
   `;
@@ -817,7 +817,7 @@ function file_image(path) {
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   <img src="${url}" width="50%">
   </div>
-  <p class="card-text text-center"><a href="https://urlshortx.com/st?api=098883295e6f9c7bfc90ca510c60aec9e078d3ff&${url}" class="btn btn-primary">Download</a></p><br>
+  <p class="card-text text-center"><a href="https://urlshortx.com/st?api=098883295e6f9c7bfc90ca510c60aec9e078d3ff&url=${url}" class="btn btn-primary">Download</a></p><br>
   </div>
   </div>
     `;
