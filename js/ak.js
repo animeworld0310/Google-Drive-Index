@@ -730,12 +730,12 @@ function file_video(path) {
   <div class="card-body text-center">
   <script type="text/javascript" src="//cdn.xtramarx.com/stage/js/website_v2/jquery-2.0.3.min.js"></script>
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
-  <video id="contentVideo" oncontextmenu="return false;" width="100%" height="100%" id="bPlayer" controlslist="nodownload"><source type="video/mp4" src="${url}"/></video>
+  <video oncontextmenu="return false;" width="100%" height="100%" id="bPlayer" controlslist="nodownload"><source type="video/mp4" src="${url}"/></video>
   </div>
 	${UI.disable_player ? '<style>#mep_0{display:none;}</style>' : ''}
   <script>
       $(function(){
-          //$('$contentVideo').bind('contextmenu', function () { return false; });
+          //$('$bPlayer').bind('contextmenu', function () { return false; });
       });
   </script>
 <script type="text/javascript">$('#bPlayer').mediaelementplayer();</script>
