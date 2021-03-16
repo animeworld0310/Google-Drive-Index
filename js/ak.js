@@ -729,7 +729,7 @@ function file_video(path) {
   <div class="card">
   <div class="card-body text-center">
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
-  <video width="100%" height="100%" id="bPlayer" controlsList="nodownload"><source type="video/mp4" src="${url}"/></video>
+  <video oncontextmenu="return false;" width="100%" height="100%" id="bPlayer" controls><source type="video/mp4" src="${url}"/></video>
   </div>
 	${UI.disable_player ? '<style>#mep_0{display:none;}</style>' : ''}
   <script type="text/javascript">$('#bPlayer').mediaelementplayer();</script>
